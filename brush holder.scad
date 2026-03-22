@@ -13,8 +13,8 @@ brush_diameter = 10;
 num_brushes = 6;           
 
 /* [Suction Cups] */
-// Diameter of the holes for suction cups
-suction_cup_diameter = 4;  
+// Diameter of the HOLES for suction cups
+suction_cups_hole_diameter = 4;  
 // Distance from side edges for suction cups
 edge_distance = 40;        
 
@@ -96,11 +96,11 @@ module wall_plate_clean() {
         linear_extrude(wall_thickness + 2)
         circle(r = puz_r_lateral + puz_tol);
 
-        // Suction Cup Holes
+        // Suction Cup Holes (using the updated variable name)
         for (x = [edge_distance, body_length - edge_distance]) {
             translate([x, -1, wall_plate_height/2])
             rotate([-90, 0, 0]) 
-            cylinder(h = wall_thickness + 2, d = suction_cup_diameter);
+            cylinder(h = wall_thickness + 2, d = suction_cups_hole_diameter);
         }
     }
 }
