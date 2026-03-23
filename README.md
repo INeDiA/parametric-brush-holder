@@ -50,8 +50,3 @@ The script automatically lays the **Wall Plate** flat on its side and the **Clip
 - **Infill:** 15-20% (Rectilinear or Gyroid).
 - **Supports:** Not required.
 - **Tolerance:** The mechanical tolerance is set to **0.1mm** for a tight, secure fit.
-
----
-
-## 📜 License
-This project is open-source. Feel free to modify and adapt it for your needs.
